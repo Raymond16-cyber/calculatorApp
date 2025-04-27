@@ -1,8 +1,8 @@
 const initialCalculationBox = document.querySelector(
-  ".calc−output−inner−input1"
+  ".calc-output-inner-input1"
 );
 
-const FinalCalculationBox = document.querySelector(".calc−output−inner−input2");
+const FinalCalculationBox = document.querySelector(".calc-output-inner-input2");
 //eval signs
 const addSign = document.querySelector(".calcSignAdd");
 const subSign = document.querySelector(".calcSignSubtract");

@@ -8,83 +8,196 @@
     <link rel="icon" href="assets/favicon.png" />
   </head>
   <body>
-
-    <div class="calculator−container">
-      <div class="head" style="display: flex;align-items: center;justify-content: space-between;">
+    <div class="calculator-container">
+      <div
+        class="head"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
         <h1>FORT</h1>
-        <img src="assets/favicon.png" alt="" width="60" height="60">
+        <img src="assets/favicon.png" alt="" width="60" height="60" />
       </div>
-      <div class="calculator−container−inner">
-        <div class="calc−output">
-          <div class="calc−output−upper">
+      <div class="calculator-container-inner">
+        <div class="calc-output">
+          <div class="calc-output-upper">
             <input
               type="text"
               name=""
-              id="output−fields"
+              id="output-fields"
               value=""
-              class="calc−output−inner−input1"
+              class="calc-output-inner-input1"
               readonly
-              autofocus ="none"
+              autofocus="none"
             />
           </div>
-          <hr class="calc−output−hr" />
-          <div class="calc−output−lower">
+          <hr class="calc-output-hr" />
+          <div class="calc-output-lower">
             <input
               type="text"
               name=""
-              id="output−fields"
+              id="output-fields"
               value="Ans:  "
-              class="calc−output−inner−input2"
+              class="calc-output-inner-input2"
             />
           </div>
         </div>
-        <div class="calc−control">
+        <div class="calc-control">
           <p>Control goes here</p>
         </div>
-        <div class="calc−buttons">
-          <div class="upper−buttons">
+        <div class="calc-buttons">
+          <div class="upper-buttons">
             <p>upper buttons go here</p>
           </div>
-          <div class="lower−buttons">
-            <div class="lower−btn−left">
-              <div class="lower−btn−left−inner">
-                <div class="lower−btn−left−inner−one">
-                  <input type="button" name="" id="" value="9" class="calcNumber9" />
-                  <input type="button" name="" id="" value="8" class="calcNumber8" />
-                  <input type="button" name="" id="" value="7" class="calcNumber7" />
+          <div class="lower-buttons">
+            <div class="lower-btn-left">
+              <div class="lower-btn-left-inner">
+                <div class="lower-btn-left-inner-one">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="9"
+                    class="calcNumber9"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="8"
+                    class="calcNumber8"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="7"
+                    class="calcNumber7"
+                  />
                 </div>
-                <div class="lower−btn−left−inner−two">
-                  <input type="button" name="" id="" value="6" class="calcNumber6" />
-                  <input type="button" name="" id="" value="5" class="calcNumber5" />
-                  <input type="button" name="" id="" value="4" class="calcNumber4" />
+                <div class="lower-btn-left-inner-two">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="6"
+                    class="calcNumber6"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="5"
+                    class="calcNumber5"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="4"
+                    class="calcNumber4"
+                  />
                 </div>
-                <div class="lower−btn−left−inner−three">
-                  <input type="button" name="" id="" value="3" class="calcNumber3" />
-                  <input type="button" name="" id="" value="2" class="calcNumber2" />
-                  <input type="button" name="" id="" value="1" class="calcNumber1" />
+                <div class="lower-btn-left-inner-three">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="3"
+                    class="calcNumber3"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="2"
+                    class="calcNumber2"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="1"
+                    class="calcNumber1"
+                  />
                 </div>
                 <div>
-                  <input type="button" value="0" style="width: 100%;" class="calcNumber0"/>
-              </div>
+                  <input
+                    type="button"
+                    value="0"
+                    style="width: 100%"
+                    class="calcNumber0"
+                  />
+                </div>
               </div>
             </div>
-            <div class="lower−btn−right">
-              <div class="lower−btn−right−inner">
-                <div>
-                  <input type="button" name="" id="" value="AC" class="calcClearButton" />
-                  <input type="button" name="" id="" value="Del" class="calcSignDelete" />
+            <div class="lower-btn-right">
+              <div class="lower-btn-right-inner">
+                <div style="display: flex;gap: 1rem;">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="AC"
+                    class="calcClearButton"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Del"
+                    class="calcSignDelete"
+                  />
                 </div>
-                <div>
-                  <input type="button" name="" id="" value="+" class="calcSignAdd" />
-                  <input type="button" name="" id="" value="-" class="calcSignSubtract" />
+                <div style="display: flex;gap: 1rem;">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="+"
+                    class="calcSignAdd"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="-"
+                    class="calcSignSubtract"
+                  />
                 </div>
-                <div>
-                  <input type="button" name="" id="" value="*" class="calcSignMultiply" />
-                  <input type="button" name="" id="" value="/"  class="calcSignDivide"/>
+                <div style="display: flex;gap: 1rem;"> 
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="*"
+                    class="calcSignMultiply"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="/"
+                    class="calcSignDivide"
+                  />
                 </div>
-                <div>
-                  <input type="button" name="" id="" value="%" class="calcSignPercentage" />
-                  <input type="button" name="" id="" value="=" class="calcEqualSign" />
+                <div style="display: flex;gap: 1rem;">
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="%"
+                    class="calcSignPercentage"
+                  />
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="="
+                    class="calcEqualSign"
+                  />
                 </div>
               </div>
             </div>
@@ -92,13 +205,11 @@
         </div>
       </div>
     </div>
-    <footer style="margin-left: 4rem;">
-      <p> Made with 😅 by raymond.&copy;Copyright Raymond</p>
+    <footer style="margin-left: 4rem">
+      <p>Made with 😅 by raymond.&copy;Copyright Raymond</p>
       <p>About the producer Raymond;Owner of FORT org</p>
-     
     </footer>
-    <!-- </div> -->
+
     <script src="js/script.js"></script>
-   
   </body>
 </html>

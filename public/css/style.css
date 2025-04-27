@@ -1,76 +1,64 @@
 body {
     margin: 0;
-    padding: 0 10rem 0 10rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    /* height: 100vh; */
-    
-    /* background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNhbGN1bGF0b3J8ZW58MHx8fHwxNjg5NTY4NzQy&ixlib=rb-4.0.3&q=80&w=1080'); */
-    
-    
 }
-@media (min-width:730px) {
-    body{
-        /* display: none; */
-        padding: 0 34rem 0 34rem;
-    }
-}
-@media (max-width:1024px) {
-    body{
-        /* display: none; */
-        
-        padding: 0 10rem 0 10rem;
+
+@media (min-width: 768px) {
+    body {
+        padding: 0 10rem;
     }
 }
 
-.calculator−container{
+@media (min-width: 1024px) {
+    body {
+        padding: 0 20rem;
+    }
+}
+
+.calculator-container {
     border: 1px solid black;
-    /* height: 100vh; */
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
     border-radius: 1.4rem;
     background-color: rgba(34, 65, 238, 0.253);
     box-shadow: 1px 1px 21px 4px black;
 }
-.calculator−container−inner{
+
+.calculator-container-inner {
     display: flex;
     flex-direction: column;
-    
 }
 
-
-
-/* calculator output */
-.calc−output{
-    max-width: 100%;
+/* Calculator output */
+.calc-output {
+    width: 100%;
     height: 8rem;
     background-color: #000000;
     color: white;
-    /* justify-content: center; */
-    align-content: center;
-    text-align: center;
     border-radius: 0.9rem;
-    
 }
-.calc−output−upper, .calc−output−lower{
+
+.calc-output-upper, .calc-output-lower {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     padding: 0.5rem;
-    
 }
-.calc−output−hr{
+
+.calc-output-hr {
     margin: 0 0.8rem;
 }
-#output−fields{
-    font-size: 1.7rem;
-    max-width: 98%;
-    height: 2rem;
 
+#output-fields {
+    font-size: 1.7rem;
+    width: 90%;
+    height: 2rem;
 }
 
 /* Calculator controls */
-.calc−control{
+.calc-control {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,64 +66,91 @@ body {
     width: 100%;
     height: 7rem;
     background-color: #000000;
-  
 }
 
-/* Calculator bUTTONS */
-.calc−buttons{
+/* Calculator buttons */
+.calc-buttons {
     display: flex;
     flex-direction: column;
 }
-.upper−buttons{
+
+.upper-buttons {
     margin-top: 2rem;
     width: 100%;
     height: 9rem;
     background-color: #000000;
 }
 
- .lower−buttons{
+.lower-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
     margin-top: 2rem;
- }
- .lower−btn−left{
+    gap: 2rem;
+}
+
+.lower-btn-left,
+.lower-btn-right {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+.lower-btn-left-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.lower-btn-left-inner-one,.lower-btn-left-inner-two,.lower-btn-left-inner-three{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1rem;
- }
- .lower−btn−left−inner{
+    gap: 1rem;
+}
+.lower-btn-right-inner{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.lower−btn−right−inner{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-input[type="button"]{
-     width: 4rem;
-   /* /* height: 4rem; */
+input[type="button"] {
+    width: 100%;
+    padding: 1rem;
     background-color: #000000;
     color: white;
     border-radius: 0.9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
-input[type="button"]:hover{
+
+input[type="button"]:hover {
     background-color: #ffffff;
     color: #000000;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-
-input[type="text"]{
+input[type="text"] {
     outline: none;
+    width: 90%;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .lower-buttons {
+        flex-direction: column;
+    }
+    
+    .lower-btn-left, .lower-btn-right {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        font-size: 1.2rem;
+    }
+
+    .calc-output {
+        height: auto;
+    }
 }
